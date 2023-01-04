@@ -1,0 +1,19 @@
+# Define your function here.
+def days_in_feb(user_year):
+    x = 0
+    if user_year % 400 == 0:
+        x = 29
+    elif user_year % 100 == 0:
+        x = 28
+    elif user_year % 4 == 0:
+        x = 29
+    else:
+        x = 28
+    return x
+
+if __name__ == '__main__':
+    
+    user_year = int(input())
+    x = days_in_feb(user_year)
+    print(f'{user_year} has {x} days in February.')
+    # Type your code here. Your code must call the function.
