@@ -1,0 +1,9 @@
+# Define your function here
+def jiffies_to_seconds(user_jiffies):
+    return user_jiffies * 1/100
+
+if __name__ == '__main__':
+    # Type your code here. Your code must call the function.
+    user_jiffies = float(input())
+    your_value = jiffies_to_seconds(user_jiffies)
+    print(f'{your_value:.3f}')
