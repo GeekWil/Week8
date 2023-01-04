@@ -1,0 +1,19 @@
+import math
+# Define your function here.
+def max_magnitude(user_val1, user_val2, user_val3):
+    x = user_val1
+    
+    if abs(user_val2) > abs(x):
+        x = user_val2
+    if abs(user_val3) > abs(x):
+        x = user_val3
+    return x
+    
+    
+if __name__ == '__main__':
+    # Type your code here.
+    user_val1 = int(input())
+    user_val2 = int(input())
+    user_val3 = int(input())
+    max_num = max_magnitude(user_val1, user_val2, user_val3)
+    print(max_num)
